@@ -2,6 +2,7 @@ import React from 'react';
 import {View, Text, ScrollView} from 'react-native';
 
 import GraphBar from '../../components/GraphBar';
+import TransactionItem from '../../components/TransactionItem';
 
 import styles from './styles';
 
@@ -27,55 +28,16 @@ function Home() {
           </ScrollView>
         </View>
       </View>
-      <View style={styles.itemContainer}>
-        <View>
-          <Text style={styles.itemTitle}>IFood</Text>
-          <Text style={styles.itemDate}>09/02/2022</Text>
-        </View>
-        <Text style={styles.itemValue}>R$52,99</Text>
-      </View>
-      <View style={styles.itemContainer}>
-        <View>
-          <Text style={styles.itemTitle}>IFood</Text>
-          <Text style={styles.itemDate}>09/02/2022</Text>
-        </View>
-        <Text style={styles.itemValue}>R$52,99</Text>
-      </View>
-      <View style={styles.itemContainer}>
-        <View>
-          <Text style={styles.itemTitle}>IFood</Text>
-          <Text style={styles.itemDate}>09/02/2022</Text>
-        </View>
-        <Text style={styles.itemValue}>R$52,99</Text>
-      </View>
-      <View style={styles.itemContainer}>
-        <View>
-          <Text style={styles.itemTitle}>IFood</Text>
-          <Text style={styles.itemDate}>09/02/2022</Text>
-        </View>
-        <Text style={styles.itemValue}>R$52,99</Text>
-      </View>
-      <View style={styles.itemContainer}>
-        <View>
-          <Text style={styles.itemTitle}>IFood</Text>
-          <Text style={styles.itemDate}>09/02/2022</Text>
-        </View>
-        <Text style={styles.itemValue}>R$52,99</Text>
-      </View>
-      <View style={styles.itemContainer}>
-        <View>
-          <Text style={styles.itemTitle}>IFood</Text>
-          <Text style={styles.itemDate}>09/02/2022</Text>
-        </View>
-        <Text style={styles.itemValue}>R$52,99</Text>
-      </View>
-      <View style={styles.itemContainer}>
-        <View>
-          <Text style={styles.itemTitle}>IFood</Text>
-          <Text style={styles.itemDate}>09/02/2022</Text>
-        </View>
-        <Text style={styles.itemValue}>R$52,99</Text>
-      </View>
+      <TransactionItem title="IFood" date="09/02/2022" value="R$52,99" />
+      <TransactionItem title="IFood" date="09/02/2022" value="R$52,99" />
+      <TransactionItem title="IFood" date="09/02/2022" value="R$52,99" />
+      <TransactionItem title="IFood" date="09/02/2022" value="R$52,99" />
+      <TransactionItem title="IFood" date="09/02/2022" value="R$52,99" />
+      <TransactionItem title="IFood" date="09/02/2022" value="R$52,99" />
+      <TransactionItem title="IFood" date="09/02/2022" value="R$52,99" />
+      <TransactionItem title="IFood" date="09/02/2022" value="R$52,99" />
+      <TransactionItem title="IFood" date="09/02/2022" value="R$52,99" />
+      <TransactionItem title="IFood" date="09/02/2022" value="R$52,99" />
     </ScrollView>
   );
 }
