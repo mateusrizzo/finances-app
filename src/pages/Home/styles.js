@@ -1,9 +1,6 @@
 import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
   greenHeader: {
     height: 320,
     backgroundColor: '#105D38',
@@ -19,14 +16,6 @@ const styles = StyleSheet.create({
     fontSize: 22,
     marginLeft: 30,
     marginTop: 15,
-  },
-  graphValueText: {
-    transform: [{rotate: '270deg'}],
-    fontFamily: 'Poppins-Medium',
-    alignSelf: 'baseline',
-    width: 75,
-    marginBottom: 30,
-    marginLeft: -15,
   },
   itemContainer: {
     flexDirection: 'row',
