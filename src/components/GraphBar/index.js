@@ -6,13 +6,17 @@ import styles from './styles';
 export default function GraphBar(props) {
   return (
     <>
-      <View style={styles(props).categoryContainer}>
-        <Text style={styles(props).category} numberOfLines={1}>
+      <View style={styles(props).bar}>
+        <Text
+          style={styles(props).category}
+          numberOfLines={1}
+          adjustsFontSizeToFit={true}>
           {props.category}
         </Text>
-      </View>
-      <View style={styles(props).bar}>
-        <Text style={styles(props).graphValueText} numberOfLines={1}>
+        <Text
+          style={styles(props).graphValueText}
+          numberOfLines={1}
+          adjustsFontSizeToFit={true}>
           {props.value}
         </Text>
       </View>

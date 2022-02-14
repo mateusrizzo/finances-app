@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#105D38',
     overflow: 'hidden',
     marginBottom: 10,
+    paddingLeft: 20,
   },
   headerText: {
     fontFamily: 'Poppins-Regular',

@@ -13,27 +13,20 @@ const styles = props =>
     },
     graphValueText: {
       transform: [{rotate: '270deg'}],
-      fontFamily: 'Poppins-Medium',
+      fontFamily: 'Poppins-SemiBold',
+      color: '#000',
       alignSelf: 'baseline',
       width: 75,
       marginBottom: 30,
       marginLeft: -15,
     },
-    categoryContainer: {
-      width: 50,
-      height: 180,
-      alignItems: 'flex-start',
-      justifyContent: 'flex-end',
-      alignSelf: 'flex-end',
-    },
     category: {
       transform: [{rotate: '270deg'}],
-      fontFamily: 'Poppins-Medium',
-      color: '#FFF',
-      alignSelf: 'baseline',
+      fontFamily: 'Poppins-Regular',
+      color: '#000',
+      alignSelf: 'flex-start',
       width: 125,
-      marginBottom: 53,
-      marginLeft: -25,
+      marginLeft: -20,
     },
   });
 

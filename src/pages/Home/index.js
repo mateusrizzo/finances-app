@@ -39,9 +39,9 @@ function Home() {
             />
             <GraphBar
               color="#C1DCEB"
-              height={220}
+              height={110}
               value="R$89,90"
-              category="Lazer"
+              category="Transporte"
             />
             <GraphBar
               color="#F45D2D"
