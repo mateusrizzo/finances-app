@@ -4,10 +4,7 @@ const styles = StyleSheet.create({
   greenHeader: {
     height: 320,
     backgroundColor: '#105D38',
-    // borderBottomLeftRadius: 20,
-    // borderBottomRightRadius: 20,
     overflow: 'hidden',
-    paddingLeft: 20,
     marginBottom: 10,
   },
   headerText: {
