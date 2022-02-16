@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   greenHeader: {
-    height: 320,
+    height: 300,
     backgroundColor: '#105D38',
     overflow: 'hidden',
     marginBottom: 10,
@@ -15,8 +15,10 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins-Regular',
     color: '#FFF',
     fontSize: 22,
-    marginLeft: 30,
-    marginTop: 15,
+    paddingLeft: 30,
+    paddingTop: 10,
+    paddingBottom: 10,
+    backgroundColor: '#105D38',
   },
 });
 

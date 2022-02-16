@@ -10,10 +10,10 @@ import styles from './styles';
 function Home() {
   return (
     <View style={styles.container}>
+      <Text style={styles.headerText}>Suas Finanças</Text>
       <ScrollView>
         <View>
           <View style={styles.greenHeader}>
-            <Text style={styles.headerText}>Suas Finanças</Text>
             <ScrollView
               horizontal={true}
               showsHorizontalScrollIndicator={false}>
