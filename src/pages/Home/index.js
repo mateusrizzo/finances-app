@@ -11,7 +11,7 @@ import styles from './styles';
 function Home() {
   return (
     <View style={styles.container}>
-      <Header />
+      <Header title="Suas Finanças" isHome={true} />
       <ScrollView>
         <Graph />
         <TransactionsList />
