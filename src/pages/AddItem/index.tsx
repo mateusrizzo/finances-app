@@ -1,43 +1,60 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {View, Text, TouchableHighlight} from 'react-native';
+import {useSelector, useDispatch} from 'react-redux';
+
+import {
+  categorySelected,
+  spendingSelected,
+  addType,
+} from '../../store/editButtons';
+import {RootState} from '../../store';
 
 import Header from '../../components/Header';
 
 import styles from './styles';
 
 export default function AddItem() {
-  const [categorySelected, setCategorySelected] = useState(false);
-  const [spendingSelected, setSpendingSelected] = useState(true);
+  const optionSelected = useSelector(
+    (state: RootState) => state.selectedButton.value,
+  );
+  const dispatch = useDispatch();
+
   return (
     <View style={styles.container}>
       <Header title="Adicionar" isHome={false} />
       <View style={styles.buttonsContainer}>
         <TouchableHighlight
           style={
-            categorySelected ? styles.selectedButton : styles.unselectedButton
+            optionSelected === addType.category
+              ? styles.selectedButton
+              : styles.unselectedButton
           }
           onPress={() => {
-            setCategorySelected(true);
-            setSpendingSelected(false);
+            dispatch(categorySelected());
           }}>
           <Text
             style={
-              categorySelected ? styles.selectedText : styles.unselectedText
+              optionSelected === addType.category
+                ? styles.selectedText
+                : styles.unselectedText
             }>
             Categoria
           </Text>
         </TouchableHighlight>
         <TouchableHighlight
           style={
-            spendingSelected ? styles.selectedButton : styles.unselectedButton
+            optionSelected === addType.spending
+              ? styles.selectedButton
+              : styles.unselectedButton
           }
           onPress={() => {
-            setCategorySelected(false);
-            setSpendingSelected(true);
+            dispatch(spendingSelected());
           }}>
           <Text
             style={
-              spendingSelected ? styles.selectedText : styles.unselectedText
+              optionSelected === addType.spending
+                ? styles.selectedText
+                : styles.unselectedText
             }>
             Gasto
           </Text>

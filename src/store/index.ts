@@ -1,6 +1,10 @@
 import {configureStore} from '@reduxjs/toolkit';
-import {selectedButtonSlice} from './editButtonsReducer';
+import selectedButtonSlice from './editButtons';
 
-configureStore({
-  reducer: selectedButtonSlice.reducer,
+export const store = configureStore({
+  reducer: {
+    selectedButton: selectedButtonSlice,
+  },
 });
+
+export type RootState = ReturnType<typeof store.getState>;
